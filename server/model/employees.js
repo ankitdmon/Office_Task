@@ -7,6 +7,7 @@ const Employee = sequelize.define('User', {
     type: DataTypes.UUID(36),
     defaultValue: DataTypes.UUIDV4,
     primaryKey: true,
+    allowNull: false,
   },
   userName: {
     type: DataTypes.STRING(45),
